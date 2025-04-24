@@ -1,5 +1,5 @@
 //
-//  AggregateMCPServer+MCPRessourceProviding.swift
+//  AggregateMCPServer+MCPResourceProviding.swift
 //  MCP.me
 //
 //  Created by Steven Prichard on 2025-04-22.
