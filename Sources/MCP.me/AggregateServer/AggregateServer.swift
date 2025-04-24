@@ -11,17 +11,21 @@ import SwiftMCP
 class AggregateMCPServer {
     internal let pingHandler: PingHandler
     internal let emailHander: EmailHandler
-    
+    internal let weatherHandler: WeatherHandler
+
     internal var servers: [MCPServer]
     
     // TODO: Clean up the use of properties & array...do we need both?
     init(
         pingHandler: PingHandler,
-        emailHandler: EmailHandler
+        emailHandler: EmailHandler,
+        weatherHandler: WeatherHandler
     ) {
         self.pingHandler = pingHandler
         self.emailHander = emailHandler
+        self.weatherHandler = weatherHandler
         self.servers = [
+            weatherHandler,
             pingHandler,
             emailHandler
         ]
