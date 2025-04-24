@@ -14,7 +14,8 @@ enum AggregateServerFactory {
         
         return .init(
             pingHandler: PingHandler(),
-            emailHandler: emailHandler
+            emailHandler: emailHandler,
+            weatherHandler: WeatherHandler()
         )
     }
 }
